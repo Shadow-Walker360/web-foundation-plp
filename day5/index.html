@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>User Directory</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="users.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="page-header">
+      <p class="eyebrow">Day 5 • Fetch API</p>
+      <h1>User Directory</h1>
+      <p class="subtitle">
+        Load users from an API, then search the data already loaded in your browser.
+      </p>
+    </header>
+
+    <section class="controls">
+
+      <button id="load-users" type="button">
+        Load Users
+      </button>
+
+      <div class="filter-area">
+        <label for="filter-input">
+          Search users
+        </label>
+
+        <div class="filter-row">
+          <input
+            id="filter-input"
+            type="text"
+            placeholder="Name, email, phone, city or address..."
+          >
+
+          <button id="filter-btn" type="button">
+            Filter
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <p id="status">
+      Click "Load Users" to fetch the user directory.
+    </p>
+
+    <section class="users-section">
+      <div class="table-header">
+        <span>Name</span>
+        <span>Email</span>
+        <span>Phone</span>
+        <span>Location</span>
+      </div>
+
+      <ul id="users-list"></ul>
+    </section>
+
+  </main>
+</body>
+</html>
